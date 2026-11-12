@@ -17,7 +17,7 @@ jobs:
     name: Linux•Toolchain ${{matrix.targets}}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
     - name: Build env stage
       run: make --directory=cmake toolchain_${{matrix.targets}}_env
     - name: Build devel stage
